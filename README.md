@@ -1,2 +1,2 @@
 # Testes
-programa para testes rápidos
+Programas para testes rápidos
