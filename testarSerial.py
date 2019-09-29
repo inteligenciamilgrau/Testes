@@ -16,3 +16,5 @@ porta = 'portaSerialDoSeuArduino' # no windows em geral 'COM2' e linux ou mac em
 velocidadeBaud = 115200 # Mesmo se a velocidade estiver errada, a conexão com a serial irá funcionar normalmente
 
 SerialArduino = serial.Serial(porta,velocidadeBaud, timeout = 0.2)
+
+SerialArduino.write('Testar'.encode())
