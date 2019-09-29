@@ -18,3 +18,5 @@ velocidadeBaud = 115200 # Mesmo se a velocidade estiver errada, a conexão com a
 SerialArduino = serial.Serial(porta,velocidadeBaud, timeout = 0.2)
 
 SerialArduino.write('Testar'.encode())
+
+SerialArduino.close()
