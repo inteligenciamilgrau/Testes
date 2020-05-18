@@ -18,5 +18,7 @@ def read_from_port(ser):
 # Dará erro "NameError: name 'SerialArduino' is not defined" caso
 # 1) O Arduino estiver desconectado
 # 2) O Arduino estiver com o Terminal Serial aberto em outro programa
+# 3) A porta (COM ou TTY) estiver errada
+
 lerSerialThread = threading.Thread(target=read_from_port, args=(SerialArduino,))
 lerSerialThread.start()
