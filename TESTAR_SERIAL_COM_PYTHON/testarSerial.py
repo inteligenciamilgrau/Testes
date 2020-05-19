@@ -11,7 +11,6 @@ try:
 except:
     print("Verificar se a porta serial está aberta em outro programa ou religar arduino")
 
-
 def read_from_port(ser):
     print("Serial funcionando correntamente")
 
@@ -19,6 +18,7 @@ def read_from_port(ser):
 # 1) O Arduino estiver desconectado
 # 2) O Arduino estiver com o Terminal Serial aberto em outro programa
 # 3) A porta (COM ou TTY) estiver errada
+# 4) A biblioteca serial instalada não é a pyserial ... neste caso desinstalar: pip uninstall serial    depois instalar a pyserial: pip install pyserial
 
 lerSerialThread = threading.Thread(target=read_from_port, args=(SerialArduino,))
 lerSerialThread.start()
